@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             title: 'Eternal Sunshine of the Spotless Mind',
-            year: 1999,
+            year: 2004,
             genre: ['Drama', 'Romance'],
             rating: 5,
             poster: 'images/eternalsunshineofthespotlessmind.jpg',
