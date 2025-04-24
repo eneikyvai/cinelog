@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cinematic Journey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="site-header">
+            <div class="header-content">
+                <img src="images/cinelog.png" alt="CineLog Logo" class="logo">
+            </div>
+            <div class="header-subtitle">My Movie Adventures</div>
+
+            <nav class="movie-filters">
+                <div class="filter-group">
+                    <label>Filter by:</label>
+                    <select id="genre-filter" class="filter-select">
+                        <option value="all">All Genres</option>
+                        <option value="action">Action</option>
+                        <option value="drama">Drama</option>
+                        <option value="mystery">Mystery</option>
+                        <option value="comedy">Comedy</option>
+                        <option value="thriller">Thriller</option>
+                        <option value="romance">Romance</option>
+                        <option value="history">History</option>
+                        <option value="war">War</option>
+                    </select>
+
+                    <select id="rating-filter" class="filter-select">
+                        <option value="all">All Ratings</option>
+                        <option value="5">⭐⭐⭐⭐⭐ (5/5)</option>
+                        <option value="4">⭐⭐⭐⭐ (4/5)</option>
+                        <option value="3">⭐⭐⭐ (3/5)</option>
+                    </select>
+
+                    <select id="year-filter" class="filter-select">
+                        <option value="all">All Years</option>
+                        <option value="2020">2020-2024</option>
+                        <option value="2010">2010-2019</option>
+                        <option value="2000">2000-2009</option>
+                        <option value="before2000">Before 2000</option>
+                    </select>
+                </div>
+            </nav>
+        </header>
+
+        <main class="movie-collection">
+            <section class="movies-grid">
+                <article class="movie-card" data-genre="drama, thriller , mystery" data-rating="5" data-year="2014">
+                    <div class="movie-card-header">
+                        <h2 class="movie-title">Gone Girl</h2>
+                        <span class="movie-year">2014</span>
+                    </div>
+                    <div class="movie-card-body">
+                        <div class="movie-poster">
+                            <img src="images/gonegirl.jpg" alt="Gone Girl">
+                        </div>
+                        <div class="movie-details">
+                            <div class="movie-metadata">
+                                <span class="movie-genre">Drama / Thriller / Mystery</span>
+                                <span class="movie-rating">⭐⭐⭐⭐⭐</span>
+                            </div>
+                            <div class="movie-description">
+                                <p>With his wife's disappearance having become the focus of an intense media circus, a man sees the spotlight turned on him when it's suspected that he may not be innocent.</p>
+                            </div>
+                            <div class="movie-additional-info">
+                                <p><strong>Director:</strong> David Fincher</p>
+                                <p><strong>Starring:</strong> Ben Affleck, Rosamund Pike, Neil Patrick Harris</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="movie-card" data-genre="drama" data-rating="5" data-year="2010">
+                    <div class="movie-card-header">
+                        <h2 class="movie-title">Shutter Island</h2>
+                        <span class="movie-year">2010</span>
+                    </div>
+                    <div class="movie-card-body">
+                        <div class="movie-poster">
+                            <img src="images/shutterisland.jpg" alt="Shutter Island">
+                        </div>
+                        <div class="movie-details">
+                            <div class="movie-metadata">
+                                <span class="movie-genre">Drama, Thriller, Mystery</span>
+                                <span class="movie-rating">⭐⭐⭐⭐⭐</span>
+                            </div>
+                            <div class="movie-description">
+                                <p>World War II soldier-turned-U.S. Marshal Teddy Daniels investigates the disappearance of a patient from a hospital for the criminally insane, but his efforts are compromised by troubling visions and a mysterious doctor.</p>
+                            </div>
+                            <div class="movie-additional-info">
+                                <p><strong>Director:</strong> Martin Scorsese</p>
+                                <p><strong>Starring:</strong> Leonardo DiCaprio, Mark Ruffalo, Ben Kingsley</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="movie-card" data-genre="drama , romance" data-rating="5" data-year="2023">
+                    <div class="movie-card-header">
+                        <h2 class="movie-title">Past Lives</h2>
+                        <span class="movie-year">2023</span>
+                    </div>
+                    <div class="movie-card-body">
+                        <div class="movie-poster">
+                            <img src="images/pastlives.jpg" alt="Past Lives">
+                        </div>
+                        <div class="movie-details">
+                            <div class="movie-metadata">
+                                <span class="movie-genre">Drama / Romance</span>
+                                <span class="movie-rating">⭐⭐⭐⭐⭐</span>
+                            </div>
+                            <div class="movie-description">
+                                <p>Nora and Hae Sung, two childhood friends, are reunited in New York for one fateful week as they confront notions of destiny, love, and the choices that make a life.</p>
+                            </div>
+                            <div class="movie-additional-info">
+                                <p><strong>Director:</strong> Celine Song</p>
+                                <p><strong>Starring:</strong> Greta Lee, Teo Yoo, John Magaro</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="movie-card" data-genre="action, thriller, mystery" data-rating="5" data-year="1999">
+                    <div class="movie-card-header">
+                        <h2 class="movie-title">Fight Club</h2>
+                        <span class="movie-year">1999</span>
+                    </div>
+                    <div class="movie-card-body">
+                        <div class="movie-poster">
+                            <img src="images/fightclub.jpg" alt="Fight Club">
+                        </div>
+                        <div class="movie-details">
+                            <div class="movie-metadata">
+                                <span class="movie-genre">Action, Thriller, Mystery</span>
+                                <span class="movie-rating">⭐⭐⭐⭐⭐</span>
+                            </div>
+                            <div class="movie-description">
+                                <p>A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy. Their concept catches on, with underground “fight clubs” forming in every town, until an eccentric gets in the way and ignites an out-of-control spiral toward oblivion.</p>
+                            </div>
+                            <div class="movie-additional-info">
+                                <p><strong>Director:</strong> David Fincher</p>
+                                <p><strong>Starring:</strong> Brad Pitt, Helena Bonham Carter, Meat Loaf</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="movie-card" data-genre="drama , romance" data-rating="5" data-year="2004">
+                    <div class="movie-card-header">
+                        <h2 class="movie-title">Eternal Sunshine of the Spotless Mind</h2>
+                        <span class="movie-year">2004</span>
+                    </div>
+                    <div class="movie-card-body">
+                        <div class="movie-poster">
+                            <img src="images/eternalsunshineofthespotlessmind.jpg" alt="Eternal Sunshine of the Spotless Mind">
+                        </div>
+                        <div class="movie-details">
+                            <div class="movie-metadata">
+                                <span class="movie-genre">Drama / Romance</span>
+                                <span class="movie-rating">⭐⭐⭐⭐⭐</span>
+                            </div>
+                            <div class="movie-description">
+                                <p>Joel Barish, heartbroken that his girlfriend underwent a procedure to erase him from her memory, decides to do the same. However, as he watches his memories of her fade away, he realises that he still loves her, and may be too late to correct his mistake.</p>
+                            </div>
+                            <div class="movie-additional-info">
+                                <p><strong>Director:</strong> Michel Gondry</p>
+                                <p><strong>Starring:</strong> Jim Carrey, Kate Winslet, Kristen Dunst</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="movie-card" data-genre="history, drama, war, action" data-rating="5" data-year="2022">
+                    <div class="movie-card-header">
+                        <h2 class="movie-title">All Quiet on the Western Front</h2>
+                        <span class="movie-year">2022</span>
+                    </div>
+                    <div class="movie-card-body">
+                        <div class="movie-poster">
+                            <img src="images/allquietonthewesternfront.jpg" alt="All Quiet on the Western Front">
+                        </div>
+                        <div class="movie-details">
+                            <div class="movie-metadata">
+                                <span class="movie-genre">History / Drama / War / Action</span>
+                                <span class="movie-rating">⭐⭐⭐⭐⭐</span>
+                            </div>
+                            <div class="movie-description">
+                                <p>Paul Baumer and his friends Albert and Muller, egged on by romantic dreams of heroism, voluntarily enlist in the German army. Full of excitement and patriotic fervour, the boys enthusiastically march into a war they believe in. But once on the Western Front, they discover the soul-destroying horror of World War I.</p>
+                            </div>
+                            <div class="movie-additional-info">
+                                <p><strong>Director:</strong> Edward Berger</p>
+                                <p><strong>Starring:</strong> Felix Kammerer, Albrecht Schuch, Aaron Hilmer, Moritz Klaus</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="movie-card" data-genre="drama, romance" data-rating="5" data-year="2024">
+                    <div class="movie-card-header">
+                        <h2 class="movie-title">Hear Me: Our Summer</h2>
+                        <span class="movie-year">2024</span>
+                    </div>
+                    <div class="movie-card-body">
+                        <div class="movie-poster">
+                            <img src="images/hearmeoursummer.jpg" alt="Hear Me: Our Summer">
+                        </div>
+                        <div class="movie-details">
+                            <div class="movie-metadata">
+                                <span class="movie-genre">Drama / Romance</span>
+                                <span class="movie-rating">⭐⭐⭐⭐⭐</span>
+                            </div>
+                            <div class="movie-description">
+                                <p>A job seeking dreamer Yong-jun works part-time at his parents lunch box house. Yeo-reum lives only to support for hearing-impaired swimmer sister. One day, Yong-jun meets Yeo-reum while delivering lunch boxes and falls in love at the first sight. Yeo-reum slowly opens her heart to warm-hearted Yong-jun.</p>
+                            </div>
+                            <div class="movie-additional-info">
+                                <p><strong>Director:</strong> Cho Sun-ho</p>
+                                <p><strong>Starring:</strong> Hong Kyung, Roh Yoon-seo, Kim Min-ju</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="movie-card" data-genre="romance, drama, comedy" data-rating="5" data-year="1994">
+                    <div class="movie-card-header">
+                        <h2 class="movie-title">Forrest Gump</h2>
+                        <span class="movie-year">1994</span>
+                    </div>
+                    <div class="movie-card-body">
+                        <div class="movie-poster">
+                            <img src="images/forrestgump.jpg" alt="Forrest Gump">
+                        </div>
+                        <div class="movie-details">
+                            <div class="movie-metadata">
+                                <span class="movie-genre">Romance / Drama / Comedy</span>
+                                <span class="movie-rating">⭐⭐⭐⭐⭐</span>
+                            </div>
+                            <div class="movie-description">
+                                <p>A man with a low IQ has accomplished great things in his life and been present during significant historic events—in each case, far exceeding what anyone imagined he could do. But despite all he has achieved, his one true love eludes him.</p>
+                            </div>
+                            <div class="movie-additional-info">
+                                <p><strong>Director:</strong> Robert Zemeckis</p>
+                                <p><strong>Starring:</strong> Tom Hanks, Robin Wright, Gary Sinise, Sally Field</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+            </section>
+
+            
+
+        <footer class="site-footer">
+            <div class="footer-content">
+                <p>&copy; 2025 CineLog.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
